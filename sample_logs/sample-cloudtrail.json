@@ -1,0 +1,13 @@
+{
+  "Records": [
+    {
+      "eventName": "ListUsers"
+    },
+    {
+      "eventName": "CreateUser"
+    },
+    {
+      "eventName": "ListBuckets"
+    }
+  ]
+}
