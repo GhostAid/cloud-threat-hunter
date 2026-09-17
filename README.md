@@ -1,10 +1,10 @@
-CloudTrail Threat Hunter
+# CloudTrail Threat Hunter
 
-Overview
+## Overview
 
 CloudTrail Threat Hunter is a Python-based security tool that analyzes AWS CloudTrail logs and identifies potentially suspicious activity. The tool categorizes events by severity level and automatically generates a detection report to assist with incident investigations.
 
-Features
+## Features
 
 * Detects high-risk AWS IAM activity
 * Identifies reconnaissance-related actions
@@ -12,7 +12,7 @@ Features
 * Generates automated Markdown reports
 * Provides a detection summary for analysts
 
-Technologies Used
+## Technologies Used
 
 * Python 3
 * AWS CloudTrail
@@ -20,11 +20,11 @@ Technologies Used
 * Git
 * GitHub
 
-Detection Logic
+## Detection Logic
 
 The tool parses CloudTrail log records and extracts the eventName field. Events are compared against predefined detection rules and assigned a severity level.
 
-High-Risk Events
+## High-Risk Events
 
 * CreateUser
 * AttachUserPolicy
@@ -32,13 +32,13 @@ High-Risk Events
 * DeleteTrail
 * StopLogging
 
-Medium-Risk Events
+## Medium-Risk Events
 
 * ListUsers
 * ListRoles
 * ListBuckets
 
-Sample Output
+## Sample Output
 
 === CloudTrail Threat Hunter ===
 [MEDIUM] ListUsers
@@ -50,7 +50,7 @@ Medium Severity Events: 2
 Low Severity Events: 0
 Report saved to reports/detection-report.md
 
-Generated Report
+## Generated Report
 
 The tool automatically generates a Markdown report containing:
 
@@ -59,7 +59,7 @@ The tool automatically generates a Markdown report containing:
 * Investigation findings
 * Analyst notes
 
-Future Improvements
+## Future Improvements
 
 * MITRE ATT&CK Mapping
 * Real CloudTrail Log Ingestion
@@ -68,7 +68,7 @@ Future Improvements
 * IP Reputation Checking
 * CloudWatch Integration
 
-Skills Demonstrated
+## Skills Demonstrated
 
 * Cloud Security
 * Detection Engineering
